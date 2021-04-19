@@ -6,7 +6,12 @@ New look of termux:
 <br><br>
 The script:
 <img src="preview/Screenshot_20210419-131801_Termux.jpg">
-<br>
+<br><br>
+<i>All in one command if you don't want to copy paste them one by one:</i>
+```bash
+pkg update && pkg upgrade -y && pkg install git -y && git clone https://github.com/msn-05/termux-fish.git && cd termux-fish && chmod +x script.sh && ./script.sh
+```
+<br><br>
 1)Update termux:
 ```bash
 pkg update && pkg upgrade -y
