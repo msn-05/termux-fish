@@ -31,7 +31,6 @@ end
 function cls
     clear
 end
-cls
 " > "$config"
 
 echo -e $Red
@@ -40,6 +39,7 @@ echo -e $Color_Off
 printf '\n'
 echo -e "${Green}[*]Clearing greeting text of termux..."
 sleep 2s
+[[( -f "$PREFIX/etc/motd")]] && rm "$PREFIX/etc/motd"
 printf '\n'
 echo -e $Cyan"*Cleared greeting text of termux*"
 printf '\n'
