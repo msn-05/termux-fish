@@ -1,5 +1,5 @@
 # Termux Fish
-This program will install fish(<b>f</b>riendly <b>i</b>nteractive <b>sh</b>ell) in termux and change the look of your termux homepage using neofetch. FISH has auto completion,syntax highlighting and many more features.
+This program will (permanently) install fish(<b>f</b>riendly <b>i</b>nteractive <b>sh</b>ell) in termux and change the look of your termux homepage using neofetch. FISH has auto completion,syntax highlighting and many more features.
 <br>
 For more info check <a href="https://fishshell.com" target="_blank">this</a> out.
 <br>
@@ -35,3 +35,8 @@ cd termux-fish && chmod +x script.sh
 ./script.sh
 ```
 6)Exit termux and enter again.
+<br><br>
+If you want to revert back to your previous shell type this command:<br>
+```bash
+chsh -s bash
+```
