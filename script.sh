@@ -45,7 +45,8 @@ echo -e $Cyan"*Cleared greeting text of termux*"
 printf '\n'
 if [[ (-f $PREFIX/etc/motd) ]]
 then
-	rm $PREFIX/etc/motd
+	mv $PREFIX/etc/motd $PREFIX/etc/motd.bak
+ 	rm $PREFIX/etc/motd
 fi
 sleep 2s
 echo -e $Green"[*]Adding neofetch to homepage..." $Red
